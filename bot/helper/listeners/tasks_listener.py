@@ -457,20 +457,18 @@ class MirrorLeechListener:
                     await sendMessage(self.message, message, buttons.build_menu(2), photo=self.random_pic)
                 fmsg = '\n'
                 for link, name in files.items():
-                    fmsg += f"<a href='{link}'>{name}</a>\n"
-                    if len(msg.encode() + fmsg.encode()) > (4000 if len(config_dict['IMAGES']) == 0 else 1000):
-                        if config_dict['SAFE_MODE']:
-                            if self.isSuperGroup:
-                                await sendMessage(self.botpmmsg, msg + BotTheme('L_LL_MSG') + fmsg, btns, photo=self.random_pic)
-                            else:
-                                await sendMessage(self.message, message + fmsg, buttons.build_menu(2), photo=self.random_pic)
+                    if config_dict['SAFE_MODE']:
+                        if self.isSuperGroup:
+                            await sendMessage(self.botpmmsg, msg + BotTheme('L_LL_MSG') + fmsg, btns, photo=self.random_pic)
                         else:
-                            if config_dict['SAVE_MSG'] and not saved and self.isSuperGroup:
-                                saved = True
-                                buttons.ibutton(BotTheme('SAVE_MSG'), 'save', 'footer')
                             await sendMessage(self.message, message + fmsg, buttons.build_menu(2), photo=self.random_pic)
-                        await sleep(1.5)
-                        fmsg = ''
+                    else:
+                        if config_dict['SAVE_MSG'] and not saved and self.isSuperGroup:
+                            saved = True
+                            buttons.ibutton(BotTheme('SAVE_MSG'), 'save', 'footer')
+                        await sendMessage(self.message, message + fmsg, buttons.build_menu(2), photo=self.random_pic)
+                    await sleep(1.5)
+                    fmsg = ''
 
                 if fmsg != '\n':
                     if config_dict['SAFE_MODE']:
