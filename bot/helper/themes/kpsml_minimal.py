@@ -242,7 +242,8 @@ Type {help_command} to get a list of available commands</b>'''
     # async def mirror_status(_, message): ----> status.py
     NO_ACTIVE_DL = '''<i>No Active Downloads!</i>
     
-<b><i>Bot Stats</i></b>
+<b>_________________________________</b>
+
 <b>🖥 CPU:</b> {cpu}% | <b>F:</b> {free} [{free_p}%]
 <b>🎮 RAM:</b> {ram} | <b>🟢 UP:</b> {uptime}
     '''
