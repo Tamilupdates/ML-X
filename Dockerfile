@@ -1,2 +1,2 @@
-FROM nanthakps/mlx:heroku
+FROM nanthakps/mlx
 COPY . .
