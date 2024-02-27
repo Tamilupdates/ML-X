@@ -1,2 +1,2 @@
-FROM nanthakps/kpsmlx
+FROM nanthakps/kpsmlx:heroku
 COPY . .
