@@ -1,3 +1,9 @@
+## Deploy on Heroku
+
+[![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Tamilupdates/ZML-X)
+
+---
+
 <div align=center>
 
 ## 𝐇𝐞𝐫𝐨𝐤𝐮 𝐃𝐞𝐩𝐥𝐨𝐲 𝐮𝐬𝐢𝐧𝐠 𝐆𝐨𝐨𝐠𝐥𝐞 𝐂𝐨𝐥𝐚𝐛
@@ -6,9 +12,3 @@
 
 </div>
 
-
----
-
-## Deploy on Heroku
-
-[![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Tamilupdates/ZML-X)
