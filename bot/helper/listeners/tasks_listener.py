@@ -457,7 +457,6 @@ class MirrorLeechListener:
                     await sendMessage(self.message, message, buttons.build_menu(2), photo=self.random_pic)
                 fmsg = '\n'
                 for index, (link, name) in enumerate(files.items(), start=1):
-                    fmsg += f"{index}. <a href='{link}'>{name}</a>\n"
                     if len(msg.encode() + fmsg.encode()) > (4000 if len(config_dict['IMAGES']) == 0 else 1000):
                             
                         if config_dict['SAFE_MODE']:
