@@ -40,7 +40,7 @@ Type {help_command} to get a list of available commands</b>'''
     HELP_HEADER = "㊂ <b><i>Help Guide Menu!</i></b>\n\n<b>NOTE: <i>Click on any CMD to see more minor detalis.</i></b>"
 
     # async def stats(client, message):
-    BOT_STATS = '''⌬ <b><i>BOT STATISTICS :</i></b>
+    BOT_STATS = '''<b><i>BOT STATISTICS :</i></b>
 <b>Bot Uptime :</b> {bot_uptime}
 
 <b><i>RAM ( MEMORY ) :</i></b>
@@ -58,12 +58,12 @@ Type {help_command} to get a list of available commands</b>'''
 <b>U :</b> {disk_u} | <b>F :</b> {disk_f} | <b>T :</b> {disk_t}
     
     '''
-    SYS_STATS = '''⌬ <b><i>OS SYSTEM :</i></b>
+    SYS_STATS = '''<b><i>OS SYSTEM :</i></b>
 <b>⏰️ Uptime:</b> {os_uptime}
 <b>🤖 Version:</b> {os_version}
 <b>🟢 Arch:</b> {os_arch}
 
-⌬ <b><i>NETWORK STATS :</i></b>
+<b><i>NETWORK STATS :</i></b>
 <b>Upload Data:</b> {up_data}
 <b>Download Data:</b> {dl_data}
 <b>Pkts Sent:</b> {pkt_sent}k
@@ -78,15 +78,15 @@ Type {help_command} to get a list of available commands</b>'''
 <b>Total Core(s) :</b> {total_core}
 <b>Usable CPU(s) :</b> {cpu_use}
     '''
-    REPO_STATS = '''⌬ <b><i>REPO STATISTICS :</i></b>
+    REPO_STATS = '''<b><i>REPO STATISTICS :</i></b>
 <b>Bot Updated :</b> {last_commit}
 <b>Current Version :</b> {bot_version}
 <b>Latest Version :</b> {lat_version}
 <b>Last ChangeLog :</b> {commit_details}
 
-⌬ <b>REMARKS :</b> <code>{remarks}</code>
+<b>REMARKS :</b> <code>{remarks}</code>
     '''
-    BOT_LIMITS = '''⌬ <b><i>BOT LIMITATIONS :</i></b>
+    BOT_LIMITS = '''<b><i>BOT LIMITATIONS :</i></b>
 <b>Direct Limit :</b> {DL} GB
 <b>Torrent Limit :</b> {TL} GB
 <b>GDrive Limit :</b> {GL} GB
@@ -108,12 +108,12 @@ Type {help_command} to get a list of available commands</b>'''
     # ---------------------
 
     # async def restart_notification(): ---> __main__.py
-    RESTART_SUCCESS = '''⌬ <b><i>😎 Restarted Successfully❗</i></b>
+    RESTART_SUCCESS = '''<b><i>😎 Restarted Successfully❗</i></b>\n
 <b>📅 Date:</b> {date}
 <b>⏲️ Time:</b> {time}
 <b>🌐 TimeZone:</b> {timz}
 <b>🤖 Version:</b> {version}'''
-    RESTARTED = '''⌬ <b><i>😎 Bot Restarted!</i></b>'''
+    RESTARTED = '''<b><i>😎 Bot Restarted!</i></b>'''
     # ---------------------
 
     # async def ping(client, message): ---> __main__.py
@@ -123,10 +123,10 @@ Type {help_command} to get a list of available commands</b>'''
 
     # async def onDownloadStart(self): --> tasks_listener.py
     LINKS_START = """<b><i>Task Started</i></b>
-<b>Mode:</b> {Mode}
-<b>By:</b> {Tag}\n\n"""
+<b>💠 Mode:</b> {Mode}
+<b>👤 Added By:</b> {Tag}\n\n"""
     LINKS_SOURCE = """➲ <b>Source:</b>
-<b>Added On:</b> {On}
+<b>👤 Added On:</b> {On}
 ------------------------------------------\n\n"""
     
     # async def __msg_to_reply(self): ---> pyrogramEngine.py
@@ -135,9 +135,9 @@ Type {help_command} to get a list of available commands</b>'''
 
     # async def onUploadComplete(): ---> tasks_listener.py
     NAME =                  '<b>🗂️ Name:</b><i> {Name}</i>\n\n'
-    SIZE =                  '<b>📦 Size:</b>{Size}\n'
+    SIZE =                  '<b>📦 Size:</b> {Size}\n'
     ELAPSE =                '<b>⏳ Elapsed:</b> {Time}\n'
-    MODE =                  '<b> | Mode:</b> {Mode}\n'
+    MODE =                  '<b>💠 Mode:</b> {Mode}\n'
 
     # ----- LEECH -------
     L_TOTAL_FILES =         '<b>📂 Total Files:</b> {Files}\n'
@@ -181,12 +181,12 @@ Type {help_command} to get a list of available commands</b>'''
     SPEED =             '\n<b>⚡ Speed:</b> {Speed}'
     ELAPSED =                                     ' | <b>⏳ Elapsed:</b> {Elapsed}'
     ENGINE =            '\n<b>⛓️ Engine:</b> {Engine}'
-    STA_MODE =          '<b> | Mode:</b> {Mode}'
+    STA_MODE =          '<b>💠 Mode:</b> {Mode}'
     SEEDERS =           '\n<b>🌱 Seeders:</b> {Seeders}'
     LEECHERS =                                           ' | <b>🐌 Leechers:</b> {Leechers}'
 
     ####--------SEEDING----------
-    SEED_SIZE =      '\n<b>📦 Size:</b>{Size}'
+    SEED_SIZE =      '\n<b>📦 Size:</b> {Size}'
     SEED_SPEED =     '\n<b>⚡ Speed:</b> {Speed} | '
     UPLOADED =                                     '<b>🔺 Uploaded:</b> {Upload}'
     RATIO =          '\n<b>📎 Ratio:</b> {Ratio} | '
@@ -194,17 +194,17 @@ Type {help_command} to get a list of available commands</b>'''
     SEED_ENGINE =    '\n<b>⛓️ Engine:</b> {Engine}'
 
     ####--------NON-PROGRESSIVE + NON SEEDING----------
-    STATUS_SIZE =    '\n<b>📦 Size:</b>{Size}'
+    STATUS_SIZE =    '\n<b>📦 Size:</b> {Size}'
     NON_ENGINE =     '\n<b>⛓️ Engine:</b> {Engine}'
 
     ####--------OVERALL MSG FOOTER----------
     USER =              '\n<b>👤 User:</b> <code>{User}</code> | '
     ID =                                                        '<b>ID:</b> <code>{Id}</code>'
     BTSEL =          '\n<b>Select:</b> {Btsel}'
-    CANCEL =         '\n<b>🚫 Cancel:</b>> {Cancel}\n\n'
+    CANCEL =         '\n<b>🚫 Cancel:</b> {Cancel}\n\n'
 
     ####------FOOTER--------
-    FOOTER = '⌬ <b><i>Bot Stats</i></b>\n'
+    FOOTER = '<b>_________________________________</b>\n'
     TASKS =  '<b>Tasks:</b> {Tasks}\n'
     BOT_TASKS = '<b>Tasks:</b> {Tasks}/{Ttask} | <b>💿 FREE:</b> {Free}\n'
     Cpu = '<b>🖥 CPU:</b> {cpu}% | '
@@ -243,7 +243,7 @@ Type {help_command} to get a list of available commands</b>'''
     # async def mirror_status(_, message): ----> status.py
     NO_ACTIVE_DL = '''<i>No Active Downloads!</i>
     
-⌬ <b><i>Bot Stats</i></b>
+<b><i>Bot Stats</i></b>
 <b>🖥 CPU:</b> {cpu}% | <b>F:</b> {free} [{free_p}%]
 <b>🎮 RAM:</b> {ram} | <b>🟢 UP:</b> {uptime}
     '''
@@ -252,9 +252,9 @@ Type {help_command} to get a list of available commands</b>'''
     # USER Setting --> user_setting.py 
     USER_SETTING = '''㊂ <b><u>User Settings :</u></b>
         
-┎<b> Name :</b> {NAME} ( <code>{ID}</code> )
-┠<b> Username :</b> {USERNAME}
-┠<b> Telegram DC :</b> {DC}
+<b> Name :</b> {NAME} ( <code>{ID}</code> )
+<b> Username :</b> {USERNAME}
+<b> Telegram DC :</b> {DC}
 <b> Language :</b> {LANG}
 
 ➲ <u><b>Available Args:</b></u>
@@ -262,35 +262,35 @@ Type {help_command} to get a list of available commands</b>'''
 
     UNIVERSAL = '''㊂ <b><u>Universal Settings : {NAME}</u></b>
 
-┎<b> YT-DLP Options :</b> <b><code>{YT}</code></b>
-┠<b> Daily Tasks :</b> <code>{DT}</code> per day
-┠<b> Last Bot Used :</b> <code>{LAST_USED}</code>
-┠<b> User Session :</b> <code>{USESS}</code>
-┠<b> MediaInfo Mode :</b> <code>{MEDIAINFO}</code>
-┠<b> Save Mode :</b> <code>{SAVE_MODE}</code>
+<b> YT-DLP Options :</b> <b><code>{YT}</code></b>
+<b> Daily Tasks :</b> <code>{DT}</code> per day
+<b> Last Bot Used :</b> <code>{LAST_USED}</code>
+<b> User Session :</b> <code>{USESS}</code>
+<b> MediaInfo Mode :</b> <code>{MEDIAINFO}</code>
+<b> Save Mode :</b> <code>{SAVE_MODE}</code>
 <b> User Bot PM :</b> <code>{BOT_PM}</code>'''
 
     MIRROR = '''㊂ <b><u>Mirror/Clone Settings : {NAME}</u></b>
 
-┎<b> RClone Config :</b> <i>{RCLONE}</i>
-┠<b> Mirror Prefix :</b> <code>{MPREFIX}</code>
-┠<b> Mirror Suffix :</b> <code>{MSUFFIX}</code>
-┠<b> Mirror Remname :</b> <code>{MREMNAME}</code>
-┠<b> DDL Server(s) :</b> <i>{DDL_SERVER}</i>
-┠<b> User TD Mode :</b> <i>{TMODE}</i>
-┠<b> Total User TD(s) :</b> <i>{USERTD}</i>
+<b> RClone Config :</b> <i>{RCLONE}</i>
+<b> Mirror Prefix :</b> <code>{MPREFIX}</code>
+<b> Mirror Suffix :</b> <code>{MSUFFIX}</code>
+<b> Mirror Remname :</b> <code>{MREMNAME}</code>
+<b> DDL Server(s) :</b> <i>{DDL_SERVER}</i>
+<b> User TD Mode :</b> <i>{TMODE}</i>
+<b> Total User TD(s) :</b> <i>{USERTD}</i>
 <b> Daily Mirror :</b> <code>{DM}</code> per day'''
 
     LEECH = '''㊂ <b><u>Leech Settings for {NAME}</u></b>
 
-┎<b> Daily Leech :</b> <code>{DL}</code> per day
-┠<b> Leech Type :</b> <i>{LTYPE}</i>
-┠<b> Custom Thumbnail :</b> <i>{THUMB}</i>
-┠<b> Leech Split Size :</b> <code>{SPLIT_SIZE}</code>
-┠<b> Equal Splits :</b> <i>{EQUAL_SPLIT}</i>
-┠<b> Media Group :</b> <i>{MEDIA_GROUP}</i>
-┠<b> Leech Caption :</b> <code>{LCAPTION}</code>
-┠<b> Leech Prefix :</b> <code>{LPREFIX}</code>
-┠<b> Leech Suffix :</b> <code>{LSUFFIX}</code>
-┠<b> Leech Dumps :</b> <code>{LDUMP}</code>
+<b> Daily Leech :</b> <code>{DL}</code> per day
+<b> Leech Type :</b> <i>{LTYPE}</i>
+<b> Custom Thumbnail :</b> <i>{THUMB}</i>
+<b> Leech Split Size :</b> <code>{SPLIT_SIZE}</code>
+<b> Equal Splits :</b> <i>{EQUAL_SPLIT}</i>
+<b> Media Group :</b> <i>{MEDIA_GROUP}</i>
+<b> Leech Caption :</b> <code>{LCAPTION}</code>
+<b> Leech Prefix :</b> <code>{LPREFIX}</code>
+<b> Leech Suffix :</b> <code>{LSUFFIX}</code>
+<b> Leech Dumps :</b> <code>{LDUMP}</code>
 <b> Leech Remname :</b> <code>{LREMNAME}</code>'''
