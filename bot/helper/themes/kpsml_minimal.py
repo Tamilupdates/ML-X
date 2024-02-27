@@ -35,7 +35,6 @@ Type {help_command} to get a list of available commands</b>'''
     BASIC_BT = 'Basic'
     USER_BT = 'Users'
     MICS_BT = 'Mics'
-    O_S_BT = 'Owner & Sudos'
     CLOSE_BT = 'Close'
     HELP_HEADER = " <b><i>Help Guide Menu!</i></b>\n\n<b>NOTE: <i>Click on any CMD to see more minor detalis.</i></b>"
 

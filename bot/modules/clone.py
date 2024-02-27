@@ -172,7 +172,7 @@ async def gdcloneNode(message, link, listen_up):
         await listener.onUploadComplete(link, size, files, folders, mime_type, name)
     else:
         btn = ButtonMaker()
-        btn.ibutton('Click Here to Read More ..', f'kpsmlx {message.from_user.id} help CLONE')
+        btn.ibutton('Click Here to Read More ..', f'mlx {message.from_user.id} help CLONE')
         reply_message = await sendMessage(message, CLONE_HELP_MESSAGE[0], btn.build_menu(1))
         await auto_delete_message(message, reply_message)
 
@@ -232,7 +232,7 @@ async def clone(client, message):
 
     if len(link) == 0:
         btn = ButtonMaker()
-        btn.ibutton('Cʟɪᴄᴋ Hᴇʀᴇ Tᴏ Rᴇᴀᴅ Mᴏʀᴇ ...', f'kpsmlx {message.from_user.id} help CLONE')
+        btn.ibutton('Cʟɪᴄᴋ Hᴇʀᴇ Tᴏ Rᴇᴀᴅ Mᴏʀᴇ ...', f'mlx {message.from_user.id} help CLONE')
         await sendMessage(message, CLONE_HELP_MESSAGE[0], btn.build_menu(1))
         await delete_links(message)
         return

@@ -465,7 +465,7 @@ async def edit_user_settings(client, query):
         handler_dict[user_id] = False
         await query.answer()
         buttons = ButtonMaker()
-        buttons.ibutton('Cʟᴏsᴇ', f'kpsmlx {user_id} close')
+        buttons.ibutton('Cʟᴏsᴇ', f'mlx {user_id} close')
         await sendMessage(message, from_user.mention, buttons.build_menu(1), thumb_path)
         await update_user_settings(query, 'thumb', 'leech')
     elif data[2] == 'show_tds':

@@ -373,7 +373,7 @@ async def _ytdl(client, message, isLeech=False, sameDir=None, bulk=[]):
 
     if not is_url(link):
         btn = ButtonMaker()
-        btn.ibutton('Cʟɪᴄᴋ Hᴇʀᴇ Tᴏ Rᴇᴀᴅ Mᴏʀᴇ ...', f'kpsmlx {message.from_user.id} help YT')
+        btn.ibutton('Cʟɪᴄᴋ Hᴇʀᴇ Tᴏ Rᴇᴀᴅ Mᴏʀᴇ ...', f'mlx {message.from_user.id} help YT')
         await sendMessage(message, YT_HELP_MESSAGE[0], btn.build_menu(1))
         await delete_links(message)
         return

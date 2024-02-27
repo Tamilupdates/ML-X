@@ -452,7 +452,7 @@ class MirrorLeechListener:
                 elif self.isSuperGroup and self.isPM:
                     message += BotTheme('L_LL_MSG')
                     message += BotTheme('L_BOT_MSG')
-                    buttons.ibutton(BotTheme('CHECK_PM'), f"kpsmlx {user_id} botpm", 'header')
+                    buttons.ibutton(BotTheme('CHECK_PM'), f"mlx {user_id} botpm", 'header')
                 if config_dict['SAFE_MODE'] and self.isSuperGroup:
                     await sendMessage(self.message, message, buttons.build_menu(2), photo=self.random_pic)
                 fmsg = '\n'
@@ -564,7 +564,7 @@ class MirrorLeechListener:
                         await sendMessage(self.botpmmsg, message, buttons.build_menu(2), photo=self.random_pic)
                         if config_dict['SAVE_MSG']:
                             s_btn.ibutton(BotTheme('SAVE_MSG'), 'save', 'footer')
-                        s_btn.ibutton(BotTheme('CHECK_PM'), f"kpsmlx {user_id} botpm", 'header')
+                        s_btn.ibutton(BotTheme('CHECK_PM'), f"mlx {user_id} botpm", 'header')
                         await sendMessage(self.message, message, s_btn.build_menu(2), photo=self.random_pic)
                 else:
                     if self.source_url and config_dict['SOURCE_LINK']:
