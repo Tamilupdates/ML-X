@@ -16,11 +16,11 @@ You can give the `custom` as your choice, like `kpsml_futuristic.py`, etc
 - _Things to Remember while Editing :_
   - Don't Change the Name Inside `{` `}` **(2nd Brackets)**
   - Don't Change the Variable Name like `ST_BN1_NAME`, etc
-  - Don't Change the Class name KPSMLStyle
+  - Don't Change the Class name MLStyle
   - Don't Use f-string like `f"{var}"`
 ***Sample Editing :***
 ```python
-class KPSMLStyle: # Don't Change This
+class MLStyle: # Don't Change This
     ST_BN1_NAME = '{sb1n}'
     # You can Change as Below !! -->
     ST_BN1_NAME = "It's {sb1n} ❤️" # Use Double Quotes, when using Single Quotes Inside

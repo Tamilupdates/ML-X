@@ -15,15 +15,15 @@ def BotTheme(var_name, **format_vars):
     theme_ = config_dict['BOT_THEME']
 
     if theme_ in AVL_THEMES:
-        text = getattr(AVL_THEMES[theme_].KPSMLStyle(), var_name, None)
+        text = getattr(AVL_THEMES[theme_].MLStyle(), var_name, None)
         if text is None:
             LOGGER.error(f"{var_name} not Found in {theme_}. Please recheck with Official Repo")
     elif theme_ == 'random':
         rantheme = rchoice(list(AVL_THEMES.values()))
         LOGGER.info(f"Random Theme Chosen: {rantheme}")
-        text = getattr(rantheme.KPSMLStyle(), var_name, None)
+        text = getattr(rantheme.MLStyle(), var_name, None)
         
     if text is None:
-        text = getattr(kpsml_minimal.KPSMLStyle(), var_name)
+        text = getattr(kpsml_minimal.MLStyle(), var_name)
 
     return text.format_map(format_vars)
