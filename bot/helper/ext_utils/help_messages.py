@@ -374,7 +374,7 @@ f'''⌬ <b><i>Owner or Sudos Commands!</i></b>
  /{BotCommands.BroadcastCommand[0]} or /{BotCommands.BroadcastCommand[1]} [reply_msg]: Broadcast to PM users who have started the bot anytime.
 
 <b>G-Drive commands:</b>
- /{BotCommands.GDCleanCommand[0]} or /{BotCommands.GDCleanCommand[1]} [drive_id]: Delete all files from specific folder in Google Drive.
+ /{BotCommands.GDCleanCommand[0]} [drive_id]: Delete all files from specific folder in Google Drive.
 
 <b>Cancel Tasks:</b>
  /{BotCommands.CancelAllCommand[0]}: Cancel all Tasks & /{BotCommands.CancelAllCommand[1]} for Multiple Bots.
