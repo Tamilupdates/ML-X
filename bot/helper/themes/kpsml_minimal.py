@@ -243,7 +243,7 @@ Type {help_command} to get a list of available commands</b>'''
     NO_ACTIVE_DL = '''No Active Downloads !
 <b>_________________________________</b>\n
 <b>🖥 CPU:</b> {cpu}% | <b>💿 FREE:</b> {free}
-<b>🎮 RAM:</b> {ram}% | <b>🟢 UP:</b> {uptime}
+<b>🎮 RAM:</b> {ram}% | <b>🟢 UPTIME:</b> {uptime}
     '''
     # ---------------------
 
