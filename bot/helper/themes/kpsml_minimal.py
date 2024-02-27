@@ -103,7 +103,7 @@ Type {help_command} to get a list of available commands</b>'''
     # ---------------------
 
     # async def restart(client, message): ---> __main__.py
-    RESTARTING = '<i>Restarting...</i>'
+    RESTARTING = '<b><i>Restarting...</i></b>'
     # ---------------------
 
     # async def restart_notification(): ---> __main__.py
