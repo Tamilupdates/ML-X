@@ -135,7 +135,7 @@ async def broadcast(_, message):
     bc_cache[bc_hash] = bc_msgs
     await editMessage(
         pls_wait,
-        f"{status.format(**locals())}\n\n<b>Elapsed Time:</b> <code>{get_readable_time(time() - start_time)}</code>\n<b>Broadcast ID:</b> <code>{bc_hash}</code>",
+        f"{status.format(**locals())}\n\n<b>⏳ Elapsed Time:</b> <code>{get_readable_time(time() - start_time)}</code>\n<b>Broadcast ID:</b> <code>{bc_hash}</code>",
     )
 
 
