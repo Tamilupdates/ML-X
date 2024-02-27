@@ -5,11 +5,11 @@
 
 ### ***Requirements :***
 1. A Local Editor or Use [github.dev](https://github.dev)
-2. **Sample File :** Check [kpsml_minimal.py](https://github.com/Tamilupdates/ML-X/blob/hk_mlx/bot/helper/themes/kpsml_minimal.py)
+2. **Sample File :** Check [ml_minimal.py](https://github.com/Tamilupdates/ML-X/blob/hk_mlx/bot/helper/themes/ml_minimal.py)
 
 ---
 
-#### ***Step 1:*** Open the Blank Editor and Paste the Codes of kpsml_minimal.py and name it `kpsml_custom.py`
+#### ***Step 1:*** Open the Blank Editor and Paste the Codes of ml_minimal.py and name it `kpsml_custom.py`
 You can give the `custom` as your choice, like `kpsml_futuristic.py`, etc
 
 #### ***Step 2:*** Start by Editing and Making your Ultimate Design ✨️ and Save in this Folder
@@ -28,7 +28,7 @@ class MLStyle: # Don't Change This
 
 #### ***Step 3:*** Now, Open [__init__.py]() and Edit as shown below and Save it
 ```python
-AVL_THEMES = {"minimal": kpsml_minimal, "emoji": kpsml_emoji, "futuristic": kpsml_futuristic} # You can add More ...
+AVL_THEMES = {"minimal": ml_minimal, "emoji": kpsml_emoji, "futuristic": kpsml_futuristic} # You can add More ...
 # Add Last Dict Value, as shown, name: filename (same as given in Step 1)
 # Name can be of any Choice to Call the Theme Name
 ```

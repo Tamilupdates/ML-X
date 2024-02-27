@@ -3,7 +3,7 @@ from os import listdir
 from importlib import import_module
 from random import choice as rchoice
 from bot import config_dict, LOGGER
-from bot.helper.themes import kpsml_minimal
+from bot.helper.themes import ml_minimal
 
 AVL_THEMES = {}
 for theme in listdir('bot/helper/themes'):
@@ -24,6 +24,6 @@ def BotTheme(var_name, **format_vars):
         text = getattr(rantheme.MLStyle(), var_name, None)
         
     if text is None:
-        text = getattr(kpsml_minimal.MLStyle(), var_name)
+        text = getattr(ml_minimal.MLStyle(), var_name)
 
     return text.format_map(format_vars)
