@@ -152,7 +152,7 @@ Type {help_command} to get a list of available commands</b>'''
     M_CC =                  '<b>👤 Mirror By:</b> {Tag}\n\n'
     M_BOT_MSG =             '➲ <b><i>Link(s) have been Sent to Bot PM (Private)</i></b>'
     # ----- BUTTONS -------
-    CLOUD_LINK =      '☁️ G-Drive Link'
+    CLOUD_LINK =      '☁️ Drive Link'
     SAVE_MSG =        '📨 Save Message'
     RCLONE_LINK =     '♻️ RClone Link'
     DDL_LINK =        '📎 {Serv} Link'
