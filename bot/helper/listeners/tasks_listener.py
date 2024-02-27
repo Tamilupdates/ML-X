@@ -447,10 +447,7 @@ class MirrorLeechListener:
                 message = msg
                 btns = btn.build_menu(2)
                 buttons = btn
-                if self.isSuperGroup and not self.isPM:
-                    message += BotTheme('L_LL_MSG')
-                elif self.isSuperGroup and self.isPM:
-                    message += BotTheme('L_LL_MSG')
+                if self.isSuperGroup and self.isPM:
                     message += BotTheme('L_BOT_MSG')
                     buttons.ibutton(BotTheme('CHECK_PM'), f"mlx {user_id} botpm", 'header')
                 if config_dict['SAFE_MODE'] and self.isSuperGroup:
@@ -461,7 +458,7 @@ class MirrorLeechListener:
                     if len(msg.encode() + fmsg.encode()) > (4000 if len(config_dict['IMAGES']) == 0 else 1000):
                         if config_dict['SAFE_MODE']:
                             if self.isSuperGroup:
-                                await sendMessage(self.botpmmsg, msg + BotTheme('L_LL_MSG') + fmsg, btns, photo=self.random_pic)
+                                await sendMessage(self.botpmmsg, msg + fmsg, btns, photo=self.random_pic)
                             else:
                                 await sendMessage(self.message, message + fmsg, buttons.build_menu(2), photo=self.random_pic)
                         else:
@@ -475,7 +472,7 @@ class MirrorLeechListener:
                 if fmsg != '\n':
                     if config_dict['SAFE_MODE']:
                         if self.isSuperGroup:
-                            await sendMessage(self.botpmmsg, msg + BotTheme('L_LL_MSG') + fmsg, btns, photo=self.random_pic)
+                            await sendMessage(self.botpmmsg + fmsg, btns, photo=self.random_pic)
                         else:
                             await sendMessage(self.message, message + fmsg, buttons.build_menu(2), photo=self.random_pic)
                     else:
@@ -545,7 +542,7 @@ class MirrorLeechListener:
                     _btns = ButtonMaker()
                     if config_dict['SAVE_MSG']:
                         _btns.ibutton(BotTheme('SAVE_MSG'), 'save', 'footer')
-                    await editMessage(self.linkslogmsg, (msg + BotTheme('LINKS_SOURCE', On=dispTime, Source=self.source_msg) + BotTheme('L_LL_MSG') + f"\n\n<a href='{log_msg.link}'>{escape(name)}</a>\n"), _btns.build_menu(1))
+                    await editMessage(self.linkslogmsg, (msg + BotTheme('LINKS_SOURCE', On=dispTime, Source=self.source_msg) + f"\n\n<a href='{log_msg.link}'>{escape(name)}</a>\n"), _btns.build_menu(1))
             
             # <Section : MESSAGE LOGS>
             if self.isPM and self.isSuperGroup:

@@ -144,7 +144,6 @@ Type {help_command} to get a list of available commands</b>'''
     L_CC =                  '<b>👤 Leech By:</b> {Tag}\n\n'
     PM_BOT_MSG =            '➲ <b><i>File(s) have been Sent above</i></b>'
     L_BOT_MSG =             '➲ <b><i>File(s) have been Sent to Bot PM (Private)</i></b>'
-    L_LL_MSG =              '➲ <b><i>File(s) have been Sent. Access via Links...</i></b>\n'
     
     # ----- MIRROR -------
     M_TYPE =                '<b>📦 Type:</b> {Mimetype}\n'
