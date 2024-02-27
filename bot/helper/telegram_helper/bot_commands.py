@@ -45,7 +45,7 @@ class _BotCommands:
         self.UserSetCommand = [f'usetting{CMD_SUFFIX}', f'us{CMD_SUFFIX}']
         self.BtSelectCommand = f'btsel{CMD_SUFFIX}'
         self.CategorySelect = f'ctsel{CMD_SUFFIX}'
-        self.SpeedCommand = [f'speedtest{CMD_SUFFIX}', f'spd{CMD_SUFFIX}']
+        self.SpeedCommand = [f'speedtest{CMD_SUFFIX}', f'sp{CMD_SUFFIX}', 'spd']
         self.RssCommand = f'rss{CMD_SUFFIX}'
         self.LoginCommand = 'login'
         self.AddImageCommand = f'addimg{CMD_SUFFIX}'
