@@ -187,31 +187,31 @@ Type {help_command} to get a list of available commands</b>'''
     ####--------SEEDING----------
     SEED_SIZE =      '\n<b>📦 Size:</b> {Size}'
     SEED_SPEED =     '\n<b>⚡ Speed:</b> {Speed} | '
-    UPLOADED =                                     '<b>🔺 Uploaded:</b> {Upload}'
+    UPLOADED =       '<b>🔺 Uploaded:</b> {Upload}'
     RATIO =          '\n<b>📎 Ratio:</b> {Ratio} | '
-    TIME =                                         '<b>⏲️ Time:</b> {Time}'
+    TIME =           '<b>⏲️ Time:</b> {Time}'
     SEED_ENGINE =    '\n<b>⛓️ Engine:</b> {Engine}'
 
     ####--------NON-PROGRESSIVE + NON SEEDING----------
     STATUS_SIZE =    '\n<b>📦 Size:</b> {Size}'
-    NON_ENGINE =     '\n<b>⛓️ Engine:</b> {Engine}'
+    NON_ENGINE  =    '\n<b>⛓️ Engine:</b> {Engine}'
 
     ####--------OVERALL MSG FOOTER----------
-    USER =              '\n<b>👤 User:</b> <code>{User}</code> | '
-    ID =                                                        '<b>ID:</b> <code>{Id}</code>'
-    BTSEL =          '\n<b>Select:</b> {Btsel}'
-    CANCEL =         '\n<b>🚫 Cancel:</b> {Cancel}\n\n'
+    USER =      '\n<b>👤 User:</b> <code>{User}</code> | '
+    ID =        '<b>ID:</b> <code>{Id}</code>'
+    BTSEL =     '\n<b>Select:</b> {Btsel}'
+    CANCEL =    '\n<b>🚫 Cancel:</b> {Cancel}\n\n'
 
     ####------FOOTER--------
-    FOOTER = '<b>_________________________________</b>\n\n'
-    TASKS =  '<b>Tasks:</b> {Tasks}\n'
+    FOOTER =    '<b>_________________________________</b>\n\n'
+    TASKS =     '<b>Tasks:</b> {Tasks}\n'
     BOT_TASKS = '<b>Tasks:</b> {Tasks}/{Ttask} | <b>💿 FREE:</b> {Free}\n'
-    Cpu = '<b>🖥 CPU:</b> {cpu}% | '
-    FREE =                      '<b>F:</b> {free} [{free_p}%]'
-    Ram = '\n<b>🎮 RAM:</b> {ram}% | '
-    uptime =                     '<b>🟢 UP:</b> {uptime}'
-    DL = '\n<b>🔻 DL:</b> {DL}/s | '
-    UL =                        '<b>🔺 UL:</b> {UL}/s'
+    Cpu =       '<b>🖥 CPU:</b> {cpu}% | '
+    FREE =      '<b>F:</b> {free} [{free_p}%]'
+    Ram =       '\n<b>🎮 RAM:</b> {ram}% | '
+    uptime =    '<b>🟢 UP:</b> {uptime}'
+    DL =        '\n<b>🔻 DL:</b> {DL}/s | '
+    UL =        '<b>🔺 UL:</b> {UL}/s'
 
     ###--------BUTTONS-------
     PREVIOUS = '⏪'
@@ -235,7 +235,7 @@ Type {help_command} to get a list of available commands</b>'''
 
     # LIST ---> gd_list.py
     LIST_SEARCHING = '<b>Searching for <i>{NAME}</i></b>'
-    LIST_FOUND = '<b>Found {NO} result for <i>{NAME}</i></b>'
+    LIST_FOUND =     '<b>Found {NO} result for <i>{NAME}</i></b>'
     LIST_NOT_FOUND = 'No result found for <i>{NAME}</i>'
     # ---------------------
 
