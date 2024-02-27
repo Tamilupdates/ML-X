@@ -171,7 +171,7 @@ Type {help_command} to get a list of available commands</b>'''
     STATUS_NAME =       '<code>{Name}</code>'
 
     #####---------PROGRESSIVE STATUS-------
-    STATUS =            '<b><a href="{Url}">{Status}</a></b>: '
+    STATUS =            '<b>{Status}</b>: '
     BAR =               '\n{Bar}'
     PROCESSED =         '\n<b>🔄 Done:</b> {Processed}'
     ETA =               '\n<b>⏳ ETA:</b> {Eta} | '
