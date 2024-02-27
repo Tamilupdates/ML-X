@@ -133,7 +133,7 @@ Type {help_command} to get a list of available commands</b>'''
     L_LOG_START =           "➲ <b><u>Leech Started :</u></b>\n\n<b>User :</b> {mention} ( #ID{uid} )\n<b>Source :</b> <a href='{msg_link}'>Click Here</a>"
 
     # async def onUploadComplete(): ---> tasks_listener.py
-    NAME =                  '<b>🗂️ Name:</b><i> {Name}</i>\n\n'
+    NAME =                  '<b>🗂️ Name:</b><i> {Name}</i>\n'
     SIZE =                  '<b>📦 Size:</b> {Size}\n'
     ELAPSE =                '<b>⏳ Elapsed:</b> {Time}\n'
     MODE =                  '<b>💠 Mode:</b> {Mode}\n'
@@ -170,7 +170,7 @@ Type {help_command} to get a list of available commands</b>'''
 
     # def get_readable_message(): ---> bot_utilis.py
     ####--------OVERALL MSG HEADER----------
-    STATUS_NAME =       '<b>🗂️ Name:</b> <i>{Name}</i>'
+    STATUS_NAME =       '<code>{Name}</code>'
 
     #####---------PROGRESSIVE STATUS-------
     BAR =               '\n{Bar}'
@@ -241,8 +241,8 @@ Type {help_command} to get a list of available commands</b>'''
 
     # async def mirror_status(_, message): ----> status.py
     NO_ACTIVE_DL = '''No Active Downloads !
-<b>_________________________________</b>\n
-<b>🖥 CPU:</b> {cpu}% | <b>F:</b> {free} [{free_p}%]
+<b>_________________________________</b>\n\n
+<b>🖥 CPU:</b> {cpu}% | <b>💿 FREE:</b> {free} [{free_p}%]
 <b>🎮 RAM:</b> {ram} | <b>🟢 UP:</b> {uptime}
     '''
     # ---------------------
