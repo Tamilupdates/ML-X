@@ -422,7 +422,7 @@ class MirrorLeechListener:
         msg = BotTheme('NAME', Name="Task has been Completed!"if config_dict['SAFE_MODE'] and self.isSuperGroup else escape(name))
         msg += BotTheme('SIZE', Size=get_readable_file_size(size))
         msg += BotTheme('ELAPSE', Time=get_readable_time(time() - self.message.date.timestamp()))
-        msg += BotTheme('MODE', Mode=self.upload_details['mode'])
+        #msg += BotTheme('MODE', Mode=self.upload_details['mode'])
         LOGGER.info(f'Task Done: {name}')
         
         buttons = ButtonMaker()

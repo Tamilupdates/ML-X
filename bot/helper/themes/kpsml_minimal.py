@@ -135,7 +135,7 @@ Type {help_command} to get a list of available commands</b>'''
     NAME =                  '<b>🗂️ Name:</b><i> {Name}</i>\n'
     SIZE =                  '<b>📦 Size:</b> {Size}\n'
     ELAPSE =                '<b>⏳ Elapsed:</b> {Time}\n'
-    MODE =                  '<b>💠 Mode:</b> {Mode}\n'
+   #MODE =                  '<b>💠 Mode:</b> {Mode}\n'
 
     # ----- LEECH -------
     L_TOTAL_FILES =         '<b>📂 Total Files:</b> {Files}\n'
