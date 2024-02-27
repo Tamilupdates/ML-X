@@ -456,8 +456,10 @@ class MirrorLeechListener:
                 if config_dict['SAFE_MODE'] and self.isSuperGroup:
                     await sendMessage(self.message, message, buttons.build_menu(2), photo=self.random_pic)
                 fmsg = '\n'
-                for link, name in files.items():
-                    if len(msg.encode() + fmsg.encode()) > (4000 if len(config_dict['IMAGES']) == 0 else 1000):
+
+                message_sent = False
+                if len(msg.encode() + fmsg.encode()) > (4000 if len(config_dict['IMAGES']) == 0 else 1000):
+                    if not message_sent:
                         if config_dict['SAFE_MODE']:
                             if self.isSuperGroup:
                                 await sendMessage(self.botpmmsg, msg + BotTheme('L_LL_MSG') + fmsg, btns, photo=self.random_pic)
@@ -470,6 +472,7 @@ class MirrorLeechListener:
                             await sendMessage(self.message, message + fmsg, buttons.build_menu(2), photo=self.random_pic)
                         await sleep(1.5)
                         fmsg = ''
+                        message_sent = True
 
                 if fmsg != '\n':
                     if config_dict['SAFE_MODE']:
