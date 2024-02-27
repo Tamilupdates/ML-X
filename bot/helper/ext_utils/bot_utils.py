@@ -506,7 +506,6 @@ async def get_stats(event, key="home"):
         btns = ButtonMaker()
         btns.ibutton('Bot Stats', f'mlx {user_id} stats stbot')
         btns.ibutton('OS Stats', f'mlx {user_id} stats stsys')
-        btns.ibutton('Repo Stats', f'mlx {user_id} stats strepo')
         btns.ibutton('Bot Limits', f'mlx {user_id} stats botlimits')
         msg = "⌬ <b><i>Bot & OS Statistics!</i></b>"
     elif key == "stbot":
@@ -558,19 +557,6 @@ async def get_stats(event, key="home"):
             v_core=cpu_count(logical=True) - cpu_count(logical=False),
             total_core=cpu_count(logical=True),
             cpu_use=len(Process().cpu_affinity()),
-        )
-    elif key == "strepo":
-        last_commit, changelog = 'No Data', 'N/A'
-        if await aiopath.exists('.git'):
-            last_commit = (await cmd_exec("git log -1 --pretty='%cd ( %cr )' --date=format-local:'%d/%m/%Y'", True))[0]
-            changelog = (await cmd_exec("git log -1 --pretty=format:'<code>%s</code> <b>By</b> %an'", True))[0]
-        official_v = (await cmd_exec("curl -o latestversion.py https://github.com/Tamilupdates/ML-X/-/raw/hk_mlx/bot/version.py -s && python3 latestversion.py && rm latestversion.py", True))[0]
-        msg = BotTheme('REPO_STATS',
-            last_commit=last_commit,
-            bot_version=get_version(),
-            lat_version=official_v,
-            commit_details=changelog,
-            remarks=await compare_versions(get_version(), official_v),
         )
     elif key == "botlimits":
         msg = BotTheme('BOT_LIMITS',
