@@ -203,7 +203,7 @@ Type {help_command} to get a list of available commands</b>'''
     CANCEL =         '\n<b>🚫 Cancel:</b> {Cancel}\n\n'
 
     ####------FOOTER--------
-    FOOTER = '<b>_________________________________</b>\n'
+    FOOTER = '<b>_________________________________</b>\n\n'
     TASKS =  '<b>Tasks:</b> {Tasks}\n'
     BOT_TASKS = '<b>Tasks:</b> {Tasks}/{Ttask} | <b>💿 FREE:</b> {Free}\n'
     Cpu = '<b>🖥 CPU:</b> {cpu}% | '
