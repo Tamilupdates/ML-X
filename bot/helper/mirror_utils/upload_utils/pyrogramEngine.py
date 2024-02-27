@@ -184,10 +184,15 @@ class TgUploader:
         if config_dict['LEECH_LOG_ID'] and not self.__listener.excep_chat:
             try:
                 self.__leechmsg = await sendMultiMessage(config_dict['LEECH_LOG_ID'], BotTheme('L_LOG_START', mention=msg_user.mention(style='HTML'), uid=msg_user.id, msg_link=self.__listener.source_url))
+                self.__sent_msg = list(self.__leechmsg.values())[0]
             except Exception as er:
                 await self.__listener.onUploadError(str(er))
                 return False
-            self.__sent_msg = list(self.__leechmsg.values())[0]
+
+            
+
+
+
         elif IS_PREMIUM_USER:
             if not self.__listener.isSuperGroup:
                 await self.__listener.onUploadError('Use SuperGroup to leech with User Client! or Set LEECH_LOG_ID to Leech in PM')
