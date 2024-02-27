@@ -37,7 +37,7 @@ Type {help_command} to get a list of available commands</b>'''
     MICS_BT = 'Mics'
     O_S_BT = 'Owner & Sudos'
     CLOSE_BT = 'Close'
-    HELP_HEADER = "㊂ <b><i>Help Guide Menu!</i></b>\n\n<b>NOTE: <i>Click on any CMD to see more minor detalis.</i></b>"
+    HELP_HEADER = " <b><i>Help Guide Menu!</i></b>\n\n<b>NOTE: <i>Click on any CMD to see more minor detalis.</i></b>"
 
     # async def stats(client, message):
     BOT_STATS = '''<b><i>BOT STATISTICS :</i></b>
@@ -250,7 +250,7 @@ Type {help_command} to get a list of available commands</b>'''
     # ---------------------
 
     # USER Setting --> user_setting.py 
-    USER_SETTING = '''㊂ <b><u>User Settings :</u></b>
+    USER_SETTING = ''' <b><u>User Settings :</u></b>
         
 <b> Name :</b> {NAME} ( <code>{ID}</code> )
 <b> Username :</b> {USERNAME}
@@ -260,7 +260,7 @@ Type {help_command} to get a list of available commands</b>'''
 ➲ <u><b>Available Args:</b></u>
 • <b>-s</b> or <b>-set</b>: Set Directly via Arg'''
 
-    UNIVERSAL = '''㊂ <b><u>Universal Settings : {NAME}</u></b>
+    UNIVERSAL = ''' <b><u>Universal Settings : {NAME}</u></b>
 
 <b> YT-DLP Options :</b> <b><code>{YT}</code></b>
 <b> Daily Tasks :</b> <code>{DT}</code> per day
@@ -270,7 +270,7 @@ Type {help_command} to get a list of available commands</b>'''
 <b> Save Mode :</b> <code>{SAVE_MODE}</code>
 <b> User Bot PM :</b> <code>{BOT_PM}</code>'''
 
-    MIRROR = '''㊂ <b><u>Mirror/Clone Settings : {NAME}</u></b>
+    MIRROR = ''' <b><u>Mirror/Clone Settings : {NAME}</u></b>
 
 <b> RClone Config :</b> <i>{RCLONE}</i>
 <b> Mirror Prefix :</b> <code>{MPREFIX}</code>
@@ -281,7 +281,7 @@ Type {help_command} to get a list of available commands</b>'''
 <b> Total User TD(s) :</b> <i>{USERTD}</i>
 <b> Daily Mirror :</b> <code>{DM}</code> per day'''
 
-    LEECH = '''㊂ <b><u>Leech Settings for {NAME}</u></b>
+    LEECH = ''' <b><u>Leech Settings for {NAME}</u></b>
 
 <b> Daily Leech :</b> <code>{DL}</code> per day
 <b> Leech Type :</b> <i>{LTYPE}</i>

@@ -187,7 +187,7 @@ async def get_user_settings(from_user, key=None, edit_type=None, edit_mode=None)
                 if enabled:
                     serv_list.append(serv)
                     ddl_serv += 1
-        text = f"㊂ <b><u>{fname_dict[key]} Settings :</u></b>\n\n" \
+        text = f" <b><u>{fname_dict[key]} Settings :</u></b>\n\n" \
                f"➲ <b>Enabled DDL Server(s) :</b> <i>{ddl_serv}</i>\n\n" \
                f"➲ <b>Description :</b> <i>{desp_dict[key][0]}</i>"
         for btn in ['gofile', 'streamtape']:
@@ -196,7 +196,7 @@ async def get_user_settings(from_user, key=None, edit_type=None, edit_mode=None)
         buttons.ibutton("Close", f"userset {user_id} close", "footer")
         button = buttons.build_menu(2)
     elif edit_type:
-        text = f"㊂ <b><u>{fname_dict[key]} Settings :</u></b>\n\n"
+        text = f" <b><u>{fname_dict[key]} Settings :</u></b>\n\n"
         if key == 'rcc':
             set_exist = await aiopath.exists(rclone_path)
             text += f"➲ <b>RClone.Conf File :</b> <i>{'' if set_exist else 'Not'} Exists</i>\n\n"
@@ -278,7 +278,7 @@ async def user_settings(client, message):
                 return await set_custom(client, reply_to, msg, set_arg, True)
             elif set_arg == 'thumb' and reply_to.media:
                 return await set_thumb(client, reply_to, msg, set_arg, True)
-        await editMessage(msg, '''㊂ <b><u>Available Flags :</u></b>
+        await editMessage(msg, ''' <b><u>Available Flags :</u></b>
 >> Reply to the Value with appropriate arg respectively to set directly without opening USet.
 
 ➲ <b>Custom Thumbnail :</b>
