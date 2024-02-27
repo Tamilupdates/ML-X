@@ -680,36 +680,32 @@ async def set_commands(client):
     try:
         bot_cmds = [
             BotCommand(
-                BotCommands.MirrorCommand[0],
-                f'or /{BotCommands.MirrorCommand[1]} Mirror [links/media/rclone_path]',
-            ),
-            BotCommand(
                 BotCommands.LeechCommand[0],
                 f'or /{BotCommands.LeechCommand[1]} Leech [links/media/rclone_path]',
-            ),
-            BotCommand(
-                BotCommands.QbMirrorCommand[0],
-                f'or /{BotCommands.QbMirrorCommand[1]} Mirror magnet/torrent using qBittorrent',
             ),
             BotCommand(
                 BotCommands.QbLeechCommand[0],
                 f'or /{BotCommands.QbLeechCommand[1]} Leech magnet/torrent using qBittorrent',
             ),
             BotCommand(
-                BotCommands.YtdlCommand[0],
-                f'or /{BotCommands.YtdlCommand[1]} Mirror yt-dlp supported links via bot',
-            ),
-            BotCommand(
                 BotCommands.YtdlLeechCommand[0],
                 f'or /{BotCommands.YtdlLeechCommand[1]} Leech yt-dlp supported links via bot',
             ),
             BotCommand(
-                BotCommands.CloneCommand[0],
-                f'or /{BotCommands.CloneCommand[1]} Copy file/folder to Drive (GDrive/RClone)',
+                BotCommands.MirrorCommand[0],
+                f'or /{BotCommands.MirrorCommand[1]} Mirror [links/media/rclone_path]',
             ),
             BotCommand(
-                BotCommands.CountCommand,
-                '[drive_url]: Count file/folder of Google Drive/RClone Drives',
+                BotCommands.QbMirrorCommand[0],
+                f'or /{BotCommands.QbMirrorCommand[1]} Mirror magnet/torrent using qBittorrent',
+            ),
+            BotCommand(
+                BotCommands.YtdlCommand[0],
+                f'or /{BotCommands.YtdlCommand[1]} Mirror yt-dlp supported links via bot',
+            ),
+            BotCommand(
+                BotCommands.CloneCommand[0],
+                f'or /{BotCommands.CloneCommand[1]} Copy file/folder to Drive (GDrive/RClone)',
             ),
             BotCommand(
                 BotCommands.StatusCommand[0],
@@ -718,14 +714,6 @@ async def set_commands(client):
             BotCommand(
                 BotCommands.StatsCommand[0],
                 f'or /{BotCommands.StatsCommand[1]} Check Bot & System stats',
-            ),
-            BotCommand(
-                BotCommands.BtSelectCommand,
-                'Select files to download only torrents/magnet qbit/aria2c',
-            ),
-            BotCommand(
-                BotCommands.CategorySelect,
-                'Select Upload Category with UserTD or Bot Categories to upload only GDrive upload',
             ),
             BotCommand(BotCommands.CancelMirror, 'Cancel a Task of yours!'),
             BotCommand(
