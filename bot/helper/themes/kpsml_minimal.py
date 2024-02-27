@@ -173,16 +173,16 @@ Type {help_command} to get a list of available commands</b>'''
     STATUS_NAME =       '<code>{Name}</code>'
 
     #####---------PROGRESSIVE STATUS-------
+    STATUS =            '<b><a href="{Url}">{Status}</a></b>'
     BAR =               '\n{Bar}'
     PROCESSED =         '\n<b>🔄 Done:</b> {Processed}'
-    STATUS =            '<a href="{Url}">{Status}</a>'
     ETA =               '\n<b>⏳ ETA:</b> {Eta}'
     SPEED =             '\n<b>⚡ Speed:</b> {Speed}'
-    ELAPSED =                                     ' | <b> | Elapsed:</b> {Elapsed}'
+    ELAPSED =           ' | <b> | Elapsed:</b> {Elapsed}'
     ENGINE =            '\n<b>⛓️ Engine:</b> {Engine}'
     STA_MODE =          '<b>💠 Mode:</b> {Mode}'
     SEEDERS =           '\n<b>🌱 Seeders:</b> {Seeders}'
-    LEECHERS =                                           ' | <b>🐌 Leechers:</b> {Leechers}'
+    LEECHERS =          ' | <b>🐌 Leechers:</b> {Leechers}'
 
     ####--------SEEDING----------
     SEED_SIZE =      '\n<b>📦 Size:</b> {Size}'
