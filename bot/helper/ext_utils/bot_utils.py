@@ -766,10 +766,6 @@ async def set_commands(client):
                 f'or /{BotCommands.MediaInfoCommand[1]} Generate Mediainfo for Replied Media or DL links',
             ),
             BotCommand(
-                BotCommands.BotSetCommand[0],
-                f"or /{BotCommands.BotSetCommand[1]} Bot's Personal Settings (Owner or Sudo Only)",
-            ),
-            BotCommand(
                 BotCommands.RestartCommand[0],
                 f'or /{BotCommands.RestartCommand[1]} Restart & Update the Bot (Owner or Sudo Only)',
             ),

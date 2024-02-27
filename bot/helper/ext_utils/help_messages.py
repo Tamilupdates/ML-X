@@ -362,10 +362,6 @@ f'''⌬ <b><i>Users Commands!</i></b>
 
 f'''⌬ <b><i>Owner or Sudos Commands!</i></b>
 
-<b>Bot Settings:</b>
-/{BotCommands.BotSetCommand[0]} or /{BotCommands.BotSetCommand[1]} [query]: Open Bot Settings (Only Owner & Sudo).
- /{BotCommands.UsersCommand}: Show User Stats Info (Only Owner & Sudo).
-
 <b>Authentication:</b>
 /{BotCommands.AuthorizeCommand[0]} or /{BotCommands.AuthorizeCommand[1]}: Authorize a chat or a user to use the bot (Only Owner & Sudo).
 /{BotCommands.UnAuthorizeCommand[0]} or /{BotCommands.UnAuthorizeCommand[1]}: Unauthorize a chat or a user to use the bot (Only Owner & Sudo).
