@@ -1,0 +1,2 @@
+FROM nanthakps/kpsmlx
+COPY . .
