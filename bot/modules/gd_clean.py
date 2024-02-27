@@ -35,9 +35,9 @@ async def driveclean(_, message):
     buttons.ibutton('Stop GDrive Clean', 'gdclean stop', 'footer')
     await editMessage(clean_msg, f'''⌬ <b><i>GDrive Clean/Trash :</i></b>
     
-┎ <b>Name:</b> {name}
-┃ <b>Size:</b> {get_readable_file_size(size)}
-┖ <b>Files:</b> {files} | <b>Folders:</b> {folders}
+<b>Name:</b> {name}
+<b>Size:</b> {get_readable_file_size(size)}
+ <b>Files:</b> {files} | <b>Folders:</b> {folders}
     
 <b>NOTES:</b>
 <i>1. All files are permanently deleted if Permanent Del, not moved to trash.

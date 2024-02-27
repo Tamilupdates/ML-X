@@ -289,7 +289,7 @@ async def anilist(_, msg, aniid=None, u_id=None):
         try:
             await sendMessage(msg, template, btns.build_menu(3), photo=title_img)
         except Exception:
-            await sendMessage(msg, template, btns.build_menu(3), photo='https://te.legra.ph/file/8a5155c0fc61cc2b9728c.jpg')
+            await sendMessage(msg, template, btns.build_menu(3), photo='https://graph.org/file/8a5155c0fc61cc2b9728c.jpg')
   
   
 async def setAnimeButtons(client, query):

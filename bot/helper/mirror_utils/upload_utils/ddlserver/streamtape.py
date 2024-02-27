@@ -106,7 +106,7 @@ class Streamtape:
             return tg_html
         tg_html =  f"""<figure><img src='{config_dict["COVER_IMAGE"]}'></figure>""" + tg_html
         path = (await telegraph.create_page(title=f"StreamTape X", content=tg_html))["path"]
-        return f"https://te.legra.ph/{path}"
+        return f"https://graph.org/{path}"
 
     async def list_folder(self, folder=None):
         url = f"{self.base_url}/file/listfolder?login={self.__userLogin}&key={self.__passKey}"
