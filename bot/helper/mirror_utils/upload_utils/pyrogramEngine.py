@@ -183,7 +183,7 @@ class TgUploader:
         msg_user = self.__listener.message.from_user
         if config_dict['LEECH_LOG_ID'] and not self.__listener.excep_chat:
             try:
-                self.__leechmsg = await sendMultiMessage(config_dict['LEECH_LOG_ID'], BotTheme('L_LOG_START', mention=msg_user.mention(style='HTML'), uid=msg_user.id, msg_link=self.__listener.source_url), delete_after_send=False)
+                self.__leechmsg = await sendMultiMessage(config_dict['LEECH_LOG_ID'], BotTheme('L_LOG_START', mention=msg_user.mention(style='HTML'), uid=msg_user.id, msg_link=self.__listener.source_url))
             except Exception as er:
                 await self.__listener.onUploadError(str(er))
                 return False
@@ -196,7 +196,6 @@ class TgUploader:
         else:
             self.__sent_msg = self.__listener.message
         return True
-
 
     async def __prepare_file(self, prefile_, dirpath):
         try:
