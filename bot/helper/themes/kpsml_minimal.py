@@ -43,7 +43,7 @@ Type {help_command} to get a list of available commands</b>'''
     BOT_STATS = '''⌬ <b><i>BOT STATISTICS :</i></b>
 <b>Bot Uptime :</b> {bot_uptime}
 
-<b><i>🎮  RAM ( MEMORY ) :</i></b>
+<b><i>RAM ( MEMORY ) :</i></b>
 {ram_bar} {ram}%
 <b>U :</b> {ram_u} | <b>F :</b> {ram_f} | <b>T :</b> {ram_t}
 
@@ -64,13 +64,13 @@ Type {help_command} to get a list of available commands</b>'''
 <b>🟢 Arch:</b> {os_arch}
 
 ⌬ <b><i>NETWORK STATS :</i></b>
-<b>🔺 Upload Data:</b> {up_data}
-<b>🔻 Download Data:</b> {dl_data}
+<b>Upload Data:</b> {up_data}
+<b>Download Data:</b> {dl_data}
 <b>Pkts Sent:</b> {pkt_sent}k
 <b>Pkts Received:</b> {pkt_recv}k
 <b>Total I/O Data:</b> {tl_data}
 
-<b>🖥️ CPU :</b>
+<b>CPU :</b>
 {cpu_bar} {cpu}%
 <b>CPU Frequency :</b> {cpu_freq}
 <b>System Avg Load :</b> {sys_load}
@@ -137,22 +137,22 @@ Type {help_command} to get a list of available commands</b>'''
     NAME =                  '<b>🗂️ Name:</b><i> {Name}</i>\n\n'
     SIZE =                  '<b>📦 Size:</b>{Size}\n'
     ELAPSE =                '<b>⏳ Elapsed:</b> {Time}\n'
-    MODE =                  '<b>Mode:</b> {Mode}\n'
+    MODE =                  '<b> | Mode:</b> {Mode}\n'
 
     # ----- LEECH -------
-    L_TOTAL_FILES =         '<b>Total Files:</b> {Files}\n'
-    L_CORRUPTED_FILES =     '<b>Corrupted Files:</b> {Corrupt}\n'
-    L_CC =                  '<b>By:</b> {Tag}\n\n'
+    L_TOTAL_FILES =         '<b>📂 Total Files:</b> {Files}\n'
+    L_CORRUPTED_FILES =     '<b>❌ Corrupted Files:</b> {Corrupt}\n'
+    L_CC =                  '<b>👤 Leech By:</b> {Tag}\n\n'
     PM_BOT_MSG =            '➲ <b><i>File(s) have been Sent above</i></b>'
     L_BOT_MSG =             '➲ <b><i>File(s) have been Sent to Bot PM (Private)</i></b>'
     L_LL_MSG =              '➲ <b><i>File(s) have been Sent. Access via Links...</i></b>\n'
     
     # ----- MIRROR -------
-    M_TYPE =                '<b>Type:</b> {Mimetype}\n'
-    M_SUBFOLD =             '<b>SubFolders:</b> {Folder}\n'
-    TOTAL_FILES =           '<b>Files:</b> {Files}\n'
-    RCPATH =                '<b>Path:</b> <code>{RCpath}</code>\n'
-    M_CC =                  '<b>By:</b> {Tag}\n\n'
+    M_TYPE =                '<b>📦 Type:</b> {Mimetype}\n'
+    M_SUBFOLD =             '<b>🗃️ SubFolders:</b> {Folder}\n'
+    TOTAL_FILES =           '<b>🗂️ Files:</b> {Files}\n'
+    RCPATH =                '<b>♻️ Path:</b> <code>{RCpath}</code>\n'
+    M_CC =                  '<b>👤 Mirror By:</b> {Tag}\n\n'
     M_BOT_MSG =             '➲ <b><i>Link(s) have been Sent to Bot PM (Private)</i></b>'
     # ----- BUTTONS -------
     CLOUD_LINK =      '☁️ Cloud Link'
@@ -227,11 +227,11 @@ Type {help_command} to get a list of available commands</b>'''
     # async def countNode(_, message): ----> gd_count.py
     COUNT_MSG = '<b>Counting:</b> <code>{LINK}</code>'
     COUNT_NAME = '<b><i>{COUNT_NAME}</i></b>\n\n'
-    COUNT_SIZE = '<b>📦 Size:</b> {COUNT_SIZE}\n'
-    COUNT_TYPE = '<b>Type:</b> {COUNT_TYPE}\n'
-    COUNT_SUB =  '<b>SubFolders:</b> {COUNT_SUB}\n'
-    COUNT_FILE = '<b>Files:</b> {COUNT_FILE}\n'
-    COUNT_CC =   '<b>By:</b> {COUNT_CC}\n'
+    COUNT_SIZE = '<b>📐 Size:</b> {COUNT_SIZE}\n'
+    COUNT_TYPE = '<b>📦 Type:</b> {COUNT_TYPE}\n'
+    COUNT_SUB =  '<b>🗃️ SubFolders:</b> {COUNT_SUB}\n'
+    COUNT_FILE = '<b>🗂️ Files:</b> {COUNT_FILE}\n'
+    COUNT_CC =   '<b>👤 Added By:</b> {COUNT_CC}\n'
     # ---------------------
 
     # LIST ---> gd_list.py
