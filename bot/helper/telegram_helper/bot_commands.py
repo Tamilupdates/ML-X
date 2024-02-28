@@ -21,10 +21,10 @@ class _BotCommands:
         self.CountCommand = f'count{CMD_SUFFIX}'
         self.DeleteCommand = f'del{CMD_SUFFIX}'
         self.CancelMirror = f'cancel{CMD_SUFFIX}'
-        self.CancelAllCommand = [f'cancelall{CMD_SUFFIX}', 'ca']
-        self.ListCommand = [f'list{CMD_SUFFIX}', 'ls']
+        self.CancelAllCommand = [f'cancelall{CMD_SUFFIX}', f'ca{CMD_SUFFIX}']
+        self.ListCommand = [f'list{CMD_SUFFIX}', f'ls{CMD_SUFFIX}']
         self.SearchCommand = f'search{CMD_SUFFIX}'
-        self.StatusCommand = [f'status{CMD_SUFFIX}', f's{CMD_SUFFIX}', 'statusall']
+        self.StatusCommand = [f'status{CMD_SUFFIX}', f's{CMD_SUFFIX}', f'statusall{CMD_SUFFIX}']
         self.UsersCommand = f'usr{CMD_SUFFIX}'
         self.AuthorizeCommand = [f'kpsauthorize{CMD_SUFFIX}', f'au{CMD_SUFFIX}']
         self.UnAuthorizeCommand = [f'kpsunauthorize{CMD_SUFFIX}', f'ua{CMD_SUFFIX}']
@@ -33,7 +33,7 @@ class _BotCommands:
         self.AddSudoCommand = [f'kpsaddsudo{CMD_SUFFIX}', 'asd']
         self.RmSudoCommand = [f'kpsrmsudo{CMD_SUFFIX}', 'rmmsd']
         self.PingCommand = [f'ping{CMD_SUFFIX}', f'p{CMD_SUFFIX}']
-        self.RestartCommand = [f'restart{CMD_SUFFIX}', f'r{CMD_SUFFIX}', 'rst']
+        self.RestartCommand = [f'restart{CMD_SUFFIX}', f'r{CMD_SUFFIX}', f'rst{CMD_SUFFIX}']
         self.StatsCommand = [f'stats{CMD_SUFFIX}', f'st{CMD_SUFFIX}']
         self.HelpCommand = f'help{CMD_SUFFIX}'
         self.LogCommand = f'log{CMD_SUFFIX}'
@@ -45,7 +45,7 @@ class _BotCommands:
         self.UserSetCommand = [f'usetting{CMD_SUFFIX}', f'us{CMD_SUFFIX}']
         self.BtSelectCommand = f'btsel{CMD_SUFFIX}'
         self.CategorySelect = f'ctsel{CMD_SUFFIX}'
-        self.SpeedCommand = [f'speedtest{CMD_SUFFIX}', f'sp{CMD_SUFFIX}', 'spd']
+        self.SpeedCommand = [f'speedtest{CMD_SUFFIX}', f'sp{CMD_SUFFIX}', f'spd{CMD_SUFFIX}']
         self.RssCommand = f'rss{CMD_SUFFIX}'
         self.LoginCommand = f'login{CMD_SUFFIX}'
         self.AddImageCommand = f'addimg{CMD_SUFFIX}'
