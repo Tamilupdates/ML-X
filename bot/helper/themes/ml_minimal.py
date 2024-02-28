@@ -3,7 +3,7 @@ class MLStyle:
     # ----------------------
     # async def start(client, message) ---> __main__.py
     ST_BN1_NAME = '😎 Owner'
-    ST_BN1_URL = 'https://t.me/BotsSupportOfficial'
+    ST_BN1_URL = 'https://t.me/Tamilupdatesofficial'
     ST_BN2_NAME = 'Support Channel 🔥'
     ST_BN2_URL = 'https://t.me/Tamilupdateofficial'
     ST_MSG = '''<b><i>This bot can mirror all your links|files|torrents to Google Drive or any rclone cloud or to telegram or to ddl servers.</i>\n
