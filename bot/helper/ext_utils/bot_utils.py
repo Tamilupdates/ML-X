@@ -706,7 +706,7 @@ async def set_commands(client):
                 BotCommands.CancelAllCommand[0],
                 'Cancel all Tasks in whole Bots.',
             ),
-            BotCommand(BotCommands.ListCommand, 'Search in Drive(s)'),
+            BotCommand(BotCommands.ListCommand[0], 'Search in Drive(s)'),
             BotCommand(
                 BotCommands.SearchCommand,
                 'Search in Torrent via qBit clients!',
