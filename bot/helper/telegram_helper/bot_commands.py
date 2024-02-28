@@ -25,7 +25,7 @@ class _BotCommands:
         self.ListCommand = [f'list{CMD_SUFFIX}', 'ls']
         self.SearchCommand = f'search{CMD_SUFFIX}'
         self.StatusCommand = [f'status{CMD_SUFFIX}', f's{CMD_SUFFIX}', 'statusall']
-        self.UsersCommand = f'users{CMD_SUFFIX}'
+        self.UsersCommand = f'usr{CMD_SUFFIX}'
         self.AuthorizeCommand = [f'kpsauthorize{CMD_SUFFIX}', f'au{CMD_SUFFIX}']
         self.UnAuthorizeCommand = [f'kpsunauthorize{CMD_SUFFIX}', f'ua{CMD_SUFFIX}']
         self.AddBlackListCommand = [f'blacklist{CMD_SUFFIX}', f'bl{CMD_SUFFIX}']
@@ -47,7 +47,7 @@ class _BotCommands:
         self.CategorySelect = f'ctsel{CMD_SUFFIX}'
         self.SpeedCommand = [f'speedtest{CMD_SUFFIX}', f'sp{CMD_SUFFIX}', 'spd']
         self.RssCommand = f'rss{CMD_SUFFIX}'
-        self.LoginCommand = 'login'
+        self.LoginCommand = f'login{CMD_SUFFIX}'
         self.AddImageCommand = f'addimg{CMD_SUFFIX}'
         self.ImagesCommand = f'images{CMD_SUFFIX}'
         self.IMDBCommand = f'imdb{CMD_SUFFIX}'
