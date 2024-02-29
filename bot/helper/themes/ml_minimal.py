@@ -197,7 +197,7 @@ Type {help_command} to get a list of available commands</b>'''
     ####--------OVERALL MSG FOOTER----------
     USER =      '\n<b>👤 User:</b> <code>{User}</code> | '
     ID =        '<b>ID:</b> <code>{Id}</code>'
-    BTSEL =     '\n<b>Select:</b> {Btsel}'
+    #BTSEL =     '\n<b>Select:</b> {Btsel}'
     CANCEL =    '\n<b>🚫 Cancel:</b> {Cancel}\n\n'
 
     ####------FOOTER--------
