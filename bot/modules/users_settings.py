@@ -94,8 +94,8 @@ async def get_user_settings(from_user, key=None, edit_type=None, edit_mode=None)
         buttons.ibutton('Disable MediaInfo' if mediainfo == 'Enabled' else 'Enable MediaInfo', f"userset {user_id} mediainfo")
         if config_dict['SHOW_MEDIAINFO']:
             mediainfo = "Force Enabled"
-        save_mode = "Save As Dump" if user_dict.get('save_mode') else "Save As BotPM"
-        buttons.ibutton('Save As BotPM' if save_mode == 'Save As Dump' else 'Save As Dump', f"userset {user_id} save_mode")
+        save_mode = "Save As Dump" if user_dict.get('save_mode') else "Save As Bot PM"
+        buttons.ibutton('Save As Bot PM' if save_mode == 'Save As Dump' else 'Save As Dump', f"userset {user_id} save_mode")
         dailytl = config_dict['DAILY_TASK_LIMIT'] or "∞"
         dailytas = user_dict.get('dly_tasks')[1] if user_dict and user_dict.get('dly_tasks') and user_id != OWNER_ID and config_dict['DAILY_TASK_LIMIT'] else config_dict['DAILY_TASK_LIMIT'] or "️∞" if user_id != OWNER_ID else "∞"
         if user_dict.get('dly_tasks', False):
