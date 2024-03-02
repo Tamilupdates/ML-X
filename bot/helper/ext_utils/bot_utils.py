@@ -720,10 +720,6 @@ async def set_commands(client):
                 f"or /{BotCommands.UserSetCommand[1]} User's Personal Settings (Open in PM)",
             ),
             BotCommand(
-                BotCommands.ScrapeCommand[0],
-                f"or /{BotCommands.ScrapeCommand[1]} Scrape Links from Website",
-            ),
-            BotCommand(
                 BotCommands.IMDBCommand,
                 'Search Movies/Series on IMDB.com and fetch details',
             ),
