@@ -36,7 +36,7 @@ class _BotCommands:
         self.RestartCommand = [f'restart{CMD_SUFFIX}', f'r{CMD_SUFFIX}', f'rst{CMD_SUFFIX}']
         self.StatsCommand = [f'stats{CMD_SUFFIX}', f'st{CMD_SUFFIX}']
         self.HelpCommand = f'help{CMD_SUFFIX}'
-        self.StatsCommand = [f'scrape{CMD_SUFFIX}', f'scr{CMD_SUFFIX}']
+        self.ScrapeCommand = [f'scrape{CMD_SUFFIX}', f'scr{CMD_SUFFIX}']
         self.LogCommand = f'log{CMD_SUFFIX}'
         self.ShellCommand = f'shell{CMD_SUFFIX}'
         self.EvalCommand = f'eval{CMD_SUFFIX}'
