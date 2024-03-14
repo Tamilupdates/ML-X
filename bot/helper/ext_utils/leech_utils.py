@@ -143,8 +143,8 @@ async def take_ss(video_file, duration=None, total=1, gen_ss=False):
     async def extract_ss(eq_thumb):
         async with thumb_sem:
             cmd[5] = str((duration // total) * eq_thumb)
-            tstamps[f"wz_thumb_{eq_thumb}.jpg"] = strftime("%H:%M:%S", gmtime(float(cmd[5])))
-            cmd[-1] = ospath.join(des_dir, f"wz_thumb_{eq_thumb}.jpg")
+            tstamps[f"thumb_{eq_thumb}.jpg"] = strftime("%H:%M:%S", gmtime(float(cmd[5])))
+            cmd[-1] = ospath.join(des_dir, f"thumb_{eq_thumb}.jpg")
             task = await create_subprocess_exec(*cmd, stderr=PIPE)
             return (task, await task.wait(), eq_thumb)
     
@@ -152,12 +152,12 @@ async def take_ss(video_file, duration=None, total=1, gen_ss=False):
     status = await gather(*tasks)
     
     for task, rtype, eq_thumb in status:
-        if rtype != 0 or not await aiopath.exists(ospath.join(des_dir, f"wz_thumb_{eq_thumb}.jpg")):
+        if rtype != 0 or not await aiopath.exists(ospath.join(des_dir, f"thumb_{eq_thumb}.jpg")):
             err = (await task.stderr.read()).decode().strip()
             LOGGER.error(f'Error while extracting thumbnail no. {eq_thumb} from video. Name: {video_file} stderr: {err}')
             await aiormtree(des_dir)
             return None
-    return (des_dir, tstamps) if gen_ss else ospath.join(des_dir, "wz_thumb_1.jpg")
+    return (des_dir, tstamps) if gen_ss else ospath.join(des_dir, "thumb_1.jpg")
 
 
 async def split_file(path, size, file_, dirpath, split_size, listener, start_time=0, i=1, inLoop=False, multi_streams=True):
@@ -274,7 +274,7 @@ async def format_filename(file_, user_id, dirpath=None, isMirror=False):
         nfile_ = prefix.replace('\s', ' ') + file_
         prefix = re_sub(r'<.*?>', '', prefix).replace('\s', ' ')
         if not file_.startswith(prefix):
-            file_ = f"{prefix}{file_}"
+            file_ = f"{prefix} {file_}"
 
     if suffix and not isMirror:
         suffix = suffix.replace('\s', ' ')
